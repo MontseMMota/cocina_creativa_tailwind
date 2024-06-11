@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre el concurso de cocina creativa, calendario de actividades, galería de imágenes de algunos platos ganadores y mucho más.">
+    <title>Concurso de cocina creativa</title>
+    <link rel="icon" href="../src/assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container mx-auto px-4">
+    <include src="./views/header.html"></include>
+</div>
+    <main>
+        <section>
+    <h1 class="text-center font-title text-5xl font-bold my-12 mx-10">¡Descubre el concurso más delicioso de todo el Baix Llobregat!</h1>
+        </section>
+    
+    
+        <div class="mt-5 mx-10">
+          <div class="flex flex-col md:flex-row">
+            <section class="w-full md:w-2/3 px-10">
+              <h2 class="font-title text-3xl mb-5">Concurso de Cocina Creativa</h2>
+              <p class="paragraph"> <span class="font-bold text-3xl">C</span>omo cada año desde 2021 se vuelve a celebrar el concurso más creativo de Cornellá de Llobregat, en el que los participantes podrán demostrar sus dotes culinarias, además de tener el privilegio de poder probar los platos de los demás concursantes y votar por su plato favorito.</p>
+              <p class="paragraph">Coincidiendo con las Fiestas Mayores, el concurso tiene como objetivo animar a los vecinos de Cornellá y alrededores a participar en una experiencia culinaria única, llena de creatividad, sabor y, por supuesto, música. Los concursantes tendrán la oportunidad de conocer personas que comparten su pasión por la cocina en un ambiente festivo y lleno de emoción y muchas sorpresas.</p>
+              <p class="paragraph">El evento estará lleno de actividades para todas las edades. Desde demostraciones culinarias hasta concursos de postres, habrá algo para todos los gustos. Los asistentes también podrán disfrutar de espectáculos en vivo, muestras de productos locales y mucho más.</p>
+              <p class="paragraph">La inscripción está abierta a cualquier persona interesada en participar. Solo se requiere un plato creativo y ganas de compartirlo con los demás. ¡No te pierdas la oportunidad de formar parte de esta emocionante experiencia culinaria!</p>
+              <div class="flex justify-center my-5">
+                <div class="flex items-center mr-5">
+                  <div class="w-5 h-5 bg-children mr-2"></div>
+                  <h3 class="text-3xl">Actividad para niños</h3>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-5 h-5 bg-red-400 mr-2"></div>
+                  <h3 class="text-3xl">Actividad para adultos</h3>
+                </div>
+              </div>
+              
+              <div class="overflow-x-auto">
+                <include src="./views/tabla.html"></include>
+              </div>
+            </section>
+            <aside class="text-3xl">
+              <h2 class="font-title  mb-4 text-4xl">Conoce a los mejores cocineros</h2>
+              <ol class="p-4 mb-4">
+                <li class="winner">
+                  <h3 class="winner__year mb-3">2023</h3>
+                  <ol class="finalists-list ml-4">
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">Esther García</h4>
+                        <p class="finalist__award"><small>1er Premio</small></p>
+                      </div>
+                    </li>
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">Josep Arimón</h4>
+                        <p class="finalist__award"><small>2o Premio</small></p>
+                      </div>
+                    </li>
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">Diana Corbi</h4>
+                        <p class="finalist__award"><small>3er Premio</small></p>
+                      </div>
+                    </li>
+                  </ol>
+                </li>
+                <li class="winner">
+                  <h3 class="winner__year mb-3">2022</h3>
+                  <ol class="finalists-list  ml-4">
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">José Luis Puente</h4>
+                        <p class="finalist__award "><small>1er Premio</small></p>
+                      </div>
+                    </li>
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">Andreu Coy</h4>
+                        <p class="finalist__award"><small>2o Premio</small></p>
+                      </div>
+                    </li>
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">Alberto Basanta</h4>
+                        <p class="finalist__award"><small>3r Premio</small></p>
+                      </div>
+                    </li>
+                  </ol>
+                </li>
+                <li class="winner">
+                  <h3 class="winner__year mb-4">2021</h3>
+                  <ol class="finalists-list  ml-4">
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">María González</h4>
+                        <p class="finalist__award"><small>1er Premio</small></p>
+                      </div>
+                    </li>
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">Vincenzo Rigatoni</h4>
+                        <p class="finalist__award"><small>2o Premio</small></p>
+                      </div>
+                    </li>
+                    <li class="finalist hover:bg-list">
+                      <div class="finalist__content">
+                        <h4 class="finalist__name mb-3">Óscar Benítez</h4>
+                        <p class="finalist__award"><small>3er Premio</small></p>
+                      </div>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </aside>
+          </div>
+    
+          <article class="mt-10">
+            <div>
+              <h2 class="font-title text-4xl mb-5">Te damos algunas ideas</h2>
+              <p class="font-sans text-xl mb-5">
+                Aquí tienes algunos platos ganadores y finalistas de las ediciones anteriores, ¡para que veas que con ingredientes básicos puedes sorprender hasta al más exigente de los jurados!
+              </p>
+            </div>
+            <include src="./views/carousel.html"></include>
+          </article>
+      </div>
+      </main>
+      <include src="./views/footer.html"></include>
+</body>
+</html>
